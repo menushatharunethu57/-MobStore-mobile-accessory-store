@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/item_background">
+
+    <ImageView
+        android:id="@+id/cartItemImage"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="centerInside"
+        android:contentDescription="Product Image" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/linmain"
+    android:layout_toRightOf="@id/cartItemImage"
+    android:orientation="horizontal"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cartItemImage"
+        android:id="@+id/lin1"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cartItemName"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/cartItemImage"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cartItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/cartItemImage"
+            android:layout_below="@id/cartItemName"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="16sp"
+            android:textColor="#FF5722"/>
+
+        <TextView
+            android:id="@+id/cartItemQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cartItemImage"
+            android:layout_below="@+id/cartItemPrice"
+            android:text="Qty: 1"
+            android:textSize="14sp"
+            android:textColor="#555555"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/purchase"
+        android:layout_width="110dp"
+        android:layout_weight="0.5"
+        app:cornerRadius="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/cartItemName"
+        android:text="Buy" />
+</LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linmain"
+            android:layout_toRightOf="@+id/cartItemImage"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF0015"
+                android:text="Delete" />
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>
