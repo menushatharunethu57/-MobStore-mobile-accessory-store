@@ -1,4 +1,3 @@
-// MyCart.java (FIXED - All issues resolved)
 package com.example.mobstore;
 
 import androidx.appcompat.app.AppCompatActivity;
