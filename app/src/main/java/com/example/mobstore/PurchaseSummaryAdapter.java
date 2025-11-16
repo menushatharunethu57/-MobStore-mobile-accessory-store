@@ -1,4 +1,3 @@
-// PurchaseSummaryAdapter.java (NEW - Missing adapter created)
 package com.example.mobstore;
 
 import android.content.Context;
