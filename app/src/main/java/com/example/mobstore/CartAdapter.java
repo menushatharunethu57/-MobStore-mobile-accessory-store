@@ -1,4 +1,3 @@
-// CartAdapter.java (UPDATED FOR YOUR XML LAYOUT)
 package com.example.mobstore;
 
 import android.content.Context;
